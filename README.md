@@ -98,6 +98,71 @@ A reference line (**y = x**) is plotted to visualize prediction accuracy.
 
 ## ▶️ How to Run the Project
 
-1. Install required libraries:
-   ```bash
-   pip install pandas numpy matplotlib scikit-learn
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/student-performance-prediction.git
+cd student-performance-prediction
+```
+
+### 2. Create a Virtual Environment (Optional but Recommended)
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+```bash
+venv\Scripts\activate
+```
+
+* **Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### 3. Install Required Libraries
+
+```bash
+pip install pandas numpy matplotlib scikit-learn
+```
+
+### 4. Add the Dataset
+
+* Download the **Student Performance Dataset**
+* Place the CSV file (for example: `student_data.csv`) in the project root directory
+
+### 5. Run the Python Script / Notebook
+
+If you are using a Python script:
+
+```bash
+python decision_tree_regression.py
+```
+
+If you are using a Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then open and run all cells in the notebook.
+
+### 6. View the Output
+
+* Evaluation metrics (MAE, RMSE, R² Score) will be printed in the console
+* A scatter plot of **Actual vs Predicted G3 scores** will be displayed
+
+---
+
+## 📌 Notes
+
+* Ensure the dataset file path matches the path used in the code
+* Hyperparameter tuning may take a few seconds due to cross-validation
+* Results may vary slightly due to random train-test splits
+
+---
